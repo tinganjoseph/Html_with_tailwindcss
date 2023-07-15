@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="submit.php" method="POST">
+        <!--Text input-->
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+
+        <br><br>
+        <!--Textarea-->
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+        <br><br>
+        <!--Select Dropdown-->
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+        </select>
+
+        <br><br>
+        <!--Radio Buttons-->
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="gender">Female</label>
+
+        <br><br>
+        <!--Checkbox -->
+        <label for="hobbies">Hobbies:</label>
+        <input type="checkbox" name="hobbies[]" id="hobbies" value="cricket">
+        <label for="hobbies">Cricket</label>
+        <input type="checkbox" name="names[]" id="names" value="football">
+        <br><br>
+        <!--Submit Button-->
+        <input type="submit" value="Submit">
+
+
+    </form>
+
+</body>
+
+</html>
